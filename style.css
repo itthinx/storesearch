@@ -74,7 +74,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	position: fixed;
 	top: 0;
 	margin: 0;
-	padding-top: 72px;
+	padding-top: 26px;
 	left: 1em;
 	width: 100%;
 	height: 100%;
@@ -83,6 +83,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	opacity: 1;
 	padding-right: 30px;
 	text-align: center;
+}
+.storefront-handheld-footer-bar.admin-bar-is-showing ul li.search.active .site-search .product-search {
+	padding-top: 72px;
 }
 .storefront-handheld-footer-bar ul li.search.active .site-search .product-search input[type="text"].product-search-field {
 	width: 90%;

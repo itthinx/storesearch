@@ -60,6 +60,9 @@ if ( !function_exists( 'storesearch_wp_footer' ) ) {
 						jQuery( 'body' ).removeClass( 'storesearch-noscroll' );
 					}
 				} );
+				<?php if ( is_admin_bar_showing() ) : ?>
+				jQuery( '.storefront-handheld-footer-bar' ).addClass( 'admin-bar-is-showing' );
+				<?php endif; ?>
 			} );
 		}
 		</script><?php
