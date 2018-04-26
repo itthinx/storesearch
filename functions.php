@@ -47,19 +47,22 @@ if ( !function_exists( 'storesearch_wp_footer' ) ) {
 		<script type="text/javascript">
 		if ( typeof jQuery !== "undefined" ) {
 			jQuery( document ).ready( function() {
+				jQuery( '.storefront-handheld-footer-bar .product-search' ).off( 'focusout' );
 				jQuery( document ).on( "click touchStart", function( event ) {
-					jQuery( '.storefront-handheld-footer-bar .product-search' ).off( 'focusout' );
 					if ( jQuery( '.storefront-handheld-footer-bar .search' ).hasClass( 'active' ) ) {
 						jQuery( 'body' ).addClass( 'storesearch-noscroll' );
 					} else {
 						jQuery( 'body' ).removeClass( 'storesearch-noscroll' );
 					}
 				} );
-				
+				jQuery( window ).on( "orientationchange resize", function( event ) {
+					if ( !jQuery( '.storefront-handheld-footer-bar' ).is( ':visible' ) ) {
+						jQuery( 'body' ).removeClass( 'storesearch-noscroll' );
+					}
+				} );
 			} );
 		}
 		</script><?php
 	}
 }
-
 add_action( 'wp_footer', 'storesearch_wp_footer' );
