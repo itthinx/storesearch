@@ -1,0 +1,61 @@
+/*
+Theme Name:  StoreSearch
+Theme URI:   https://www.itthinx.com/products/storesearch/
+Description: StoreSearch is a Storefront child theme which is intended to provide an integration basis for the official WooCommerce Product Search extension. As a Storefront child theme, StoreSearch already benefits from all the WooCommerce integration features that Storefront provides.
+Author:      itthinx
+Author URI:  https://www.itthinx.com
+Template:    storefront
+Version:     1.0.0
+License:     GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags:        e-commerce, light, white, orange, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
+Text Domain: storesearch
+*/
+
+body {
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	line-height: 28px;
+	color: #111;
+}
+a {
+	color: #ee935a;
+}
+a:hover {
+	color: #995e3a;
+}
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #333;
+	font-weight: normal;
+}
+.widget-area .widget,
+.widget-area .widget a {
+	color: #111;
+	padding: 8px;
+}
+.widget .product-search-filter-category {
+	font-size: 24px;
+	line-height: 38px;
+}
+.widget .product-search-filter-category-heading.product-search-filter-terms-heading,
+.widget .product-search-filter-tag-heading.product-search-filter-terms-heading,
+.widget .product-search-filter-attribute-heading.product-search-filter-terms-heading,
+.widget .product-search-filter-price-heading {
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px solid #f2f2f2;
+	color: #333;
+	background-color: #eee;
+	padding: 8px;
+	margin-bottom: 8px;
+}
+.product-search-filter-terms a:hover {
+	color: #ee935a;
+}
+.product-search-filter-terms .nav-back {
+	font-size: 12px;
+}
+.product-search-filter-terms .nav-back a {
+	padding: 0;
+}
