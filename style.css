@@ -43,6 +43,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .widget-area .widget .show-thumbnails.hide-names img.term-thumbnail {
 	margin: 4px 3px;
 }
+.woocommerce-active .site-header .site-search {
+	width: 40%;
+}
 .widget .product-search-filter-category {
 	font-size: 20px;
 	line-height: 38px;
