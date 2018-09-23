@@ -1,0 +1,10 @@
+*** StoreSearch - A Storefront Child Theme for WooCommerce Product Search - Changelog ***
+
+== 1.1.0 ==
+
+- Added a missing heading style for search filter.
+- Added the changelog.txt.
+
+== 1.0.0 ==
+
+- Initial release.
