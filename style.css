@@ -5,7 +5,7 @@ Description: StoreSearch is a Storefront child theme which is intended to provid
 Author:      itthinx, proaktion
 Author URI:  https://www.itthinx.com
 Template:    storefront
-Version:     1.1.0
+Version:     1.2.0
 License:     GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags:        e-commerce, light, white, orange, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
@@ -81,18 +81,21 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	position: fixed;
 	top: 0;
 	margin: 0;
-	padding-top: 26px;
-	left: 1em;
 	width: 100%;
-	height: 100%;
+	height: calc( 100% - 4.24em );
 	min-height: 50px;
 	background-color: #fff;
 	opacity: 1;
-	padding-right: 30px;
 	text-align: center;
+	padding: 0;
+	margin: 0;
+	border: none;
+	left: 0;
 }
 .storefront-handheld-footer-bar.admin-bar-is-showing ul li.search.active .site-search .product-search {
-	padding-top: 72px;
+	padding: 72px 0 0 0;
+	margin: 0;
+	border: none;
 }
 .storefront-handheld-footer-bar ul li.search.active .site-search .product-search input[type="text"].product-search-field {
 	width: 90%;
@@ -104,26 +107,38 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	font-size: 1.6em;
 }
 .storefront-handheld-footer-bar ul li.search.active .site-search .product-search span.product-search-field-clear {
-	font-size: 2em;
+	margin-right: 5%; /* compensate 90% width of the input field */
+	font-size: 1.618em;
+	right: 0;
+	top: -0.7em;
 }
 .storefront-handheld-footer-bar ul li.search.active .site-search .product-search span.product-search-field-clear::after {
-	padding: 0.2em;
-	vertical-align: baseline;
+	padding: 0;
+	margin: 0;
+	border: none;
 }
 .storefront-handheld-footer-bar ul li.search.active .site-search .product-search .product-search-results {
 	display: inline-block;
-	padding: 1em 0 0 0;
 	border: none;
-	top: 128px;
 	left: 0;
 	width: 100% !important;
-	height: 80%;
+	height: 84%;
 	z-index: 1000;
 	overflow-y: scroll;
+	padding: 0;
+	margin: 0;
+}
+.storefront-handheld-footer-bar ul li.search.active .site-search .product-search .product-search-results .product-search-results-content {
+	padding: 10px 0 0 0;
+	margin: 0;
+	border: none;
 }
 .storefront-handheld-footer-bar ul li.search.active .site-search .widget_search form::before,
 .storefront-handheld-footer-bar ul li.search.active .site-search .widget_product_search form::before {
 	content: '';
+}
+.storefront-handheld-footer-bar li.search.active > a:before {
+	content: "\f010";
 }
 @media (min-width:1024px) {
 	.widget-area .widget,
