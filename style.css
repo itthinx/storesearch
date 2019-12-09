@@ -54,7 +54,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .widget .product-search-filter-category-heading.product-search-filter-terms-heading,
 .widget .product-search-filter-tag-heading.product-search-filter-terms-heading,
 .widget .product-search-filter-attribute-heading.product-search-filter-terms-heading,
-.widget .product-search-filter-price-heading {
+.widget .product-search-filter-price-heading,
+.widget .product-search-filter-extras-heading {
 	font-size: 18px;
 	font-weight: bold;
 	border-bottom: 1px solid #f2f2f2;
