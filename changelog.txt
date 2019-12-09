@@ -1,5 +1,9 @@
 *** StoreSearch - A Storefront Child Theme for WooCommerce Product Search - Changelog ***
 
+== 1.2.1 ==
+
+- Added style for extras widget heading.
+
 == 1.2.0 ==
 
 - Adjustments for the handheld footer bar ported over from WPS 2.12.0
